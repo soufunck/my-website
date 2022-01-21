@@ -1,0 +1,109 @@
+/* === SIDES === */
+.row_rightContent {   
+  float: right;
+  width: 95%;
+}
+
+.row_leftContent {
+  float: left;
+  margin: 20px 0;
+  width: 5%;
+}
+
+.row_leftContent .styles_listSide {
+  position: fixed;
+}
+
+/* === CARD === */
+.card_image {
+  display: block;
+  margin: 0 auto 30px auto;
+  width: 50%;
+}
+
+.card {
+  background: var(--shape);
+
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+
+  transition: all 0.2s
+}
+
+.card_header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card_header h2 {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  
+  color: var(--white);
+}
+
+.card_statistics {
+  display: flex;
+  align-items: center;
+
+  color: var(--support);
+  font-size: 14px;
+  font-weight: 700;
+
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+.cardIcons {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.card_list, .card_listNumbers {
+  color: var(--white);
+  padding-left: 23px;
+}
+
+.card_list {
+  list-style: disc;
+}
+
+.card_list h3 {
+  margin: 50px 0 10px 0;
+}
+
+.card_list__desc {
+  color: var(--base-text);
+  background: var(--shape-hover);  
+  border-left: 2px solid var(--primary);
+
+  font-size: 17px;
+  margin: 5px 0 10px 0;
+  padding: 10px;
+}
+
+.card_description {
+  color: var(--base-text);
+  font-size: 16px;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 870px) {
+  .row_leftContent, 
+  .row_rightContent {   
+    width: 100%;
+    padding: 0;
+  }
+  .row_leftContent .styles_listSide {
+    position: relative;
+    border-top: 1px solid var(--shape)
+  }
+  .row_leftContent .styles_listSide svg  {
+    margin-top: 20px;
+  }
+  .card_header h2 {
+    font-size: 20px;
+  }
+}
